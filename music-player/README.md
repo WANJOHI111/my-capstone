@@ -1,16 +1,44 @@
-# React + Vite
+#  FE Capstone Project: Music Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Overview
+This project is a **Music Player Web Application** built using **React**, **Tailwind CSS**, and the **Deezer API**.  
+It allows users to **search**, **browse**, and **play 30-second preview clips** of songs using data from Deezer.
 
-Currently, two official plugins are available:
+The app simulates a real-world frontend development project, integrating API data, handling user input, managing state, and creating a responsive, user-friendly UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+##  Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+###  Core Functionalities
+- **Search Music:** Search by song title, artist, or album.
+- **Display Results:** Show track title, artist, album name, and cover image.
+- **Music Playback:** Play 30-second preview clips using Deezer’s `preview` URL.
+- **Playback Controls:** Play, pause, and adjust volume.
+- **Responsive UI:** Works seamlessly on desktop, tablet, and mobile.
+- **Error Handling:** User-friendly messages for network errors or no results.
 
-## Expanding the ESLint configuration
+###  Optional Stretch Goals
+- User Authentication (e.g., login and saved playlists)
+- Playlist creation & management
+- Lyrics integration
+- Visualizer/Equalizer
+- Dark mode toggle
+- Voice search using Web Speech API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Frontend Framework | React (Vite) |
+| Styling | Tailwind CSS |
+| API | Deezer Public API |
+| Audio | HTML5 `<audio>` element |
+| State Management | React Hooks (`useState`, `useEffect`) |
+| Deployment | Netlify / Vercel |
+| Proxy Handling | Netlify Serverless Function (to bypass CORS) |
+
+---
+
