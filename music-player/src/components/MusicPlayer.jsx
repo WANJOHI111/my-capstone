@@ -12,7 +12,7 @@ export default function MusicPlayer({ track, onEnded }) {
 
   useEffect(() => {
     if (!track) return;
-    // autoplay when track changes
+    
     setPlaying(true);
     audioRef.current && (audioRef.current.src = track.preview || '');
     audioRef.current && audioRef.current.play().catch(() => setPlaying(false));
